@@ -1,4 +1,29 @@
 captainVersion: 4
+caproverOneClickApp:
+    variables:
+        - id: $$cap_db_user
+          label: Database user
+          defaultValue: admin
+          validRegex: /^([a-zA-Z0-9])+$/
+        - id: $$cap_db_pass
+          label: Database password
+          description: ''
+          validRegex: /.{1,}/
+        - id: $$cap_pg_version
+          label: Postgres Version
+          defaultValue: '14'
+          description: Version of postgres
+          validRegex: /^([^\s^\/])+$/
+    instructions:
+        start: >-
+           The process will take about a minute for the process to finish.
+        end: >
+            HFSQL is deployed and available as $$cap_appname-hfsql . 
+    displayName: HFSQL
+    isOfficial: false
+    description: Postgres avec graphana
+    documentation: 
+
 services:
 
   postgres:
