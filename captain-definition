@@ -1,4 +1,4 @@
 {
     "schemaVersion": 2,
-    "imageName": "nginxdemos/hello"
+    "imageName": "./images/postgres-surcharge/Dockerfile"
    }
