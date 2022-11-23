@@ -1,9 +1,8 @@
 {
     "schemaVersion": 2,
     "dockerfileLines": [
-                          "FROM postgres:14",
-                          "ENV LANG fr_FR.utf8",
-                          "EXPOSE 5432",
-                          "CMD [ \"postgres\"]"
+                          "FROM prometheuscommunity/postgres-exporter:v0.10.1",
+                          "COPY queries.yaml  /mnt/queries.yaml"
+                
                       ]
    }
