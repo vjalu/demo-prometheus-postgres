@@ -1,4 +1,9 @@
 {
     "schemaVersion": 2,
-    "imageName": "./Dockerfile"
+    "dockerfileLines": [
+                          "postgres:15.1-alpine",
+                          "RUN mkdir -p /usr/src/app",
+                          "EXPOSE 5432",
+                          "CMD [ \"postgres\"]"
+                      ]
    }
