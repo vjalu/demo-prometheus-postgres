@@ -1,7 +1,8 @@
 {
     "schemaVersion": 2,
     "dockerfileLines": [
-                          "FROM postgres:15.1-alpine",
+                          "FROM postgres:14",
+                          "ENV LANG fr_FR.utf8",
                           "EXPOSE 5432",
                           "CMD [ \"postgres\"]"
                       ]

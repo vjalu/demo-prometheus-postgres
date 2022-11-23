@@ -1,0 +1,4 @@
+{
+    "schemaVersion": 2,
+    "imageName": "grafana/grafana:8.5.6"
+}
