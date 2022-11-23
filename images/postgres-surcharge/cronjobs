@@ -1,0 +1,4 @@
+*/1 * * * * /srv/scripts/cron/cron-minutes.sh 
+0 0 * * * /srv/scripts/cron/cron-days.sh
+0 0 * * 0 /srv/scripts/cron/cron-week.sh  
+0 0 1 * * /srv/scripts/cron/cron-month.sh  
